@@ -4,6 +4,41 @@
 	box-sizing: border-box;
 }
 
+//color variables
+$color1: #C25646;
+$color2: #333333;
+$color3: #EAF0EC;
+$color4: #adc3b4;
+$color5: #fafafa;
+
+//fonts
+
+//fonts for titles
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700');
+
+//font-family for titles
+$titleFont: 'Lora', serif;
+
+//font-weight fot titles
+$normalTitle: 400;
+$boldTitle: 700;
+
+//fonts for general site
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+
+//font-weight for texts
+$light: 300;
+$normal: 400;
+$medium: 600;
+$bold: 700;
+
+//General styles
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: $color5;
+}
+
 img {
 	max-width: 100%;
 }
@@ -11,3 +46,19 @@ img {
 label {
 	display: block;
 }
+
+//partials
+
+@import "partials/header";
+@import "partials/button";
+@import "partials/main-nav";
+@import "partials/book";
+@import "partials/landing";
+@import "partials/why";
+@import "partials/experience";
+@import "partials/room";
+@import "partials/activities";
+@import "partials/event";
+@import "partials/dining";
+@import "partials/contact";
+@import "partials/footer";

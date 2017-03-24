@@ -1,0 +1,55 @@
+.contact {
+	padding: 4em 0 1em;
+
+	&__container {
+		width: 90%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	&__header {
+
+	}
+	&__header-title {
+		font-family: $titleFont;
+		font-weight: $boldTitle;
+		text-transform: uppercase;
+		color: $color2;
+		font-size: 2.1em;
+		line-height: 1.4;
+		margin-bottom: 0;
+	}
+	//items
+	&__items-container {
+		padding-top: 2em;
+	}
+	&__item {
+		margin-bottom: 5em;
+	}
+	&__element-container {
+		margin-bottom: 3em;
+	}
+	&__item-title {
+		color: $color2;
+		font-family: $titleFont;
+		font-weight: $normalTitle;
+		font-size: 1.6em;
+		display: inline-block;
+		margin: .5em 0;
+		position: relative;
+		&:after {
+			content: " ";
+			width: 100%;
+			height: 1px;
+			background-color: $color2;
+			position: absolute;
+			bottom: -.2em;
+			left: 0;
+		}
+	}
+	&__item-text {
+		color: rgba($color2, .7);
+		font-size: 1.2em;
+		font-weight: $light;
+		line-height: 1.6;
+	}
+}

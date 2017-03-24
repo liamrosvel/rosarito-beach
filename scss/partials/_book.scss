@@ -1,0 +1,172 @@
+.book {
+	background-color: $color5;
+	padding-bottom: 2em;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 650;
+	width: 100%;
+	overflow: auto;
+
+	transform: translateY(-110%);
+	opacity: 0;
+	transition: all 450ms ease-in;
+
+	&.open-modal {
+		transform: translateY(0);
+		opacity: 1;
+	}
+
+	&__container {
+		width: 90%;
+		margin: 0 auto;
+	}
+	&__header {
+		text-align: center;
+		position: relative;
+		padding: 1em 0;
+		margin-bottom: 1em;
+	}
+	&__header-title {
+		font-weight: $medium;
+		font-size: 1.5em;
+	}
+	//icon close styles
+	&__header-icon {
+		width: 2em;
+		fill: $color2;
+		position: absolute;
+		right: 0;
+		top: 2.2em;
+		cursor: pointer;
+	}
+	//book form options styles
+	&__form-container {
+		border: 1px solid rgba($color2, .2);
+		border-radius: 8px;
+		padding: 2em;
+	}
+	&__form {
+		position: relative;
+	}
+	&__input-container {
+		margin-bottom: 1.3em;
+	}
+	&__form-label {
+		color: $color2;
+		font-weight: $medium;
+		font-size: 1.2em;
+		margin-bottom: .6em;
+	}
+	&__form-input {
+		border: 1px solid rgba($color2, .2);
+		border-radius: 5px;
+		line-height: 2.5;
+		padding-left: 1em;
+		width: 100%;
+		&:focus {
+			outline: none;
+		}
+		&::placeholder {
+			color: rgba($color2, .3);
+		}
+	}
+	&__form-input-number {
+		width: 50%;
+	}
+	//button section
+	&__button-container {
+		padding: 1em 0;
+	}
+	//calendar styles
+	&__calendar-one,
+	&__calendar-two {
+		background-color: $color5;
+		border: 1px solid rgba($color2, .2);
+		padding: 1em;
+		position: absolute;
+		width: 300px;
+
+		animation: slideCalendar 600ms ease-in .2s 1 normal;
+		animation-play-state: pause;
+		display: none;
+		&.calendar-play {
+			animation-play-state: play;
+			display: initial;
+		} 
+	}
+	&__calendar-one {
+		top: 14.3em;
+		left: 2em;
+
+		display: none;
+	}
+	&__calendar-two {
+		top: 20.4em;
+		left: 2em;				
+	}
+	&__calendar-month-container {
+		text-align: center;
+		border-bottom: 1px solid rgba($color2, .2);
+		margin-bottom: .5em;
+	}
+	&__calendar-month,
+	&__calendar-month-year {
+		color: $color2;
+		font-weight: $bold;
+		margin: 0 0 .5em;
+	}
+	&__calendar-month-year {
+		font-weight: $normal;
+	}
+	&__calendar-week-container {
+		margin-bottom: .5em;
+	}
+	&__calendar-week-container,
+	&__calendar-days-container {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__calendar-day-week {
+		font-weight: $medium;
+	}
+	&__calendar-day-week,
+	&__calendar-day {
+		color: rgba($color2, .5);
+		width: 2em;
+		height: 2em;
+	}
+	&__calendar-day {
+		margin-bottom: .2em;
+		cursor: pointer;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&:hover {
+			background-color: $color1;
+			color: #fff;
+		}
+	}
+	&__calendar-day-style {
+		font-weight: $light;
+	}
+	//Animation calendar
+	@keyframes slideCalendar {
+		0% 
+		{
+			opacity: 0;
+			transform: translateY(0);
+		}
+		50%
+		{
+			opacity: .5;
+			transform: translateY(2em);
+		}
+		100%
+		{
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+}

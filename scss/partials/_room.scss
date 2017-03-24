@@ -1,0 +1,77 @@
+.room {
+	padding: 4em 0 3em;
+	position: relative;
+
+	&__container {
+		width: 90%;
+		margin: 0 auto;
+	}
+	&__header {
+		text-align: center;
+	}
+	&__header-title {
+		font-family: $titleFont;
+		font-weight: $boldTitle;
+		text-transform: uppercase;
+		color: $color2;
+		font-size: 2.1em;
+		margin-bottom: 0;
+	}
+	&__header-subtitle {
+		font-family: $titleFont;
+		font-weight: $normalTitle;
+		font-size: 1.8em;
+		color: $color2;
+		line-height: 1.4;
+	}
+	//Items
+	&__items-container {
+
+	}
+	&__item {
+		margin-bottom: 4em;
+	}
+	&__item-room-one,
+	&__item-room-two,
+	&__item-room-three {
+		margin: 0;
+		padding: 0;
+	}
+	&__item-room {
+
+	}
+	&__item-copy-container {
+
+	}
+	&__item-title {
+		font-family: $titleFont;
+		font-weight: $normalTitle;
+		font-size: 1.4em;
+		text-transform: uppercase;
+		color: $color2;
+		position: relative;
+		display: inline-block;
+		margin-bottom: .5em;
+		&:before {
+			content: " ";
+			width: 100%;
+			height: 1px;
+			background-color: $color2;
+			position: absolute;
+			bottom: -.1em;
+			left: 0;
+		}
+	}
+	&__item-subtitle {
+		text-transform: uppercase;
+		font-size: 1.7em;
+		font-weight: $medium;
+		margin: .5em 0 .8em;
+	}
+	&__item-text {
+		margin-bottom: 2.5em;
+		font-size: 1.2em;
+		font-weight: $light;
+		line-height: 1.6;
+	}
+}

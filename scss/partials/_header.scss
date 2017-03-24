@@ -1,0 +1,77 @@
+.header {
+	padding: 1em 0;
+	background-color: $color5;
+	box-shadow: 1px 0 2px 2px rgba($color2, .1);
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 550;
+
+	&__container {
+		width: 90%;
+		margin: 0 auto;
+	}
+	&__icons-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	//styles for logo
+	&__logo-container {
+		width: 12em;
+	}
+	&__logo-type-top {
+		fill: $color1;
+	}
+	&__logo-type-bottom {
+		fill: $color2;
+	}
+	//Styles and animation for menu icon
+	&__icon-bar {
+		display: inline-block;
+		width: 45px;
+		height: 2px;
+		background-color: $color2;
+		position: relative;
+		&:before {
+			content: " ";
+			display: block;
+			width: 45px;
+			height: 2px;
+			background-color: $color2;
+			position: absolute;
+			top: -.8em;
+			left: 0;
+			transition: all 150ms ease-in;
+		}
+		&:after {
+			content: " ";
+			display: block;
+			width: 45px;
+			height: 2px;
+			background-color: $color2;
+			position: absolute;
+			bottom: -.8em;
+			left: 0;
+			transition: all 150ms ease-in;
+		}
+	}
+	&__icon-menu {
+		width: 45px;
+		height: 30px;
+		cursor: pointer;
+		position: relative;
+		z-index: 650;
+		
+		&:hover .header__icon-bar:before {
+			width: 30px;
+			left: .5em;
+		}
+
+		&:hover .header__icon-bar:after {
+			width: 30px;
+			left: .5em;
+		}
+	}
+}

@@ -1,0 +1,38 @@
+.dining {
+	padding: 6em 0 5em;
+	background-color: #fff;
+
+	&__container {
+		width: 90%;
+		margin: 0 auto;
+	}
+	&__items-container {
+
+	}
+	&__img-container {
+		margin: 0;
+		padding: 0;
+	}
+	&__img {
+
+	}
+	&__copy-container {
+		text-align: center;
+	}
+	&__header {
+		
+	}
+	&__header-title {
+		font-family: $titleFont;
+		font-weight: $boldTitle;
+		text-transform: uppercase;
+		color: $color2;
+		font-size: 2.1em;
+		line-height: 1.4;
+	}
+	&__text {
+		font-size: 1.2em;
+		font-weight: $light;
+		line-height: 1.6;
+	}
+}
