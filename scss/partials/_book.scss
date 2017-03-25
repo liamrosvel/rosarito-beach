@@ -18,9 +18,22 @@
 		opacity: 1;
 	}
 
+	&.open-modal-nav {
+		transform: translateY(0);
+		opacity: 1;
+	}
+
 	&__container {
 		width: 90%;
 		margin: 0 auto;
+
+		@media screen and (min-width: 768px) {
+			width: 85%;
+		}
+
+		@media screen and (min-width: 1024px) {
+			width: 700px;
+		}
 	}
 	&__header {
 		text-align: center;
@@ -40,6 +53,10 @@
 		right: 0;
 		top: 2.2em;
 		cursor: pointer;
+	}
+	&__button {
+		width: 50%;
+		margin: 0 auto;
 	}
 	//book form options styles
 	&__form-container {
@@ -101,10 +118,18 @@
 		left: 2em;
 
 		display: none;
+
+		@media screen and (min-width: 1024px) {
+			left: 11em;
+		}
 	}
 	&__calendar-two {
 		top: 20.4em;
-		left: 2em;				
+		left: 2em;
+
+		@media screen and (min-width: 1024px) {
+			left: 11em;
+		}			
 	}
 	&__calendar-month-container {
 		text-align: center;

@@ -1,10 +1,14 @@
 .activities {
 	background-color: #fff;
-	padding: 4em 0 1em;
+	padding: 4em 0;
 
 	&__container {
 		width: 90%;
 		margin: 0 auto;
+
+		@media screen and (min-width: 768px) {
+			width: 85%;
+		}
 	}
 	&__header {
 		text-align: center;
@@ -25,6 +29,10 @@
 		line-height: 1.4;
 		color: $color2;
 		margin-top: 0;
+
+		@media screen and (min-width: 1024px) {
+			font-size: 1.5em;
+		}
 	}
 	&__copy-container {
 		text-align: center;
@@ -33,107 +41,57 @@
 		font-size: 1.2em;
 		font-weight: $light;
 		line-height: 1.6;
+
+		@media screen and (min-width: 1024px) {
+			font-size: 1.1em;
+			line-height: 1.8;
+		}
 	}
 	//Cards
 	&__cards-container {
-		
-	}
-	//Cards
-	&__card-kids,
-	&__card-spa,
-	&__card-art,
-	&__card-tour,
-	&__card-whale,
-	&__card-wine,
-	&__card-golf,
-	&__card-surf {
-		margin-bottom: 5em;
-		width: 100%;
-		height: 485px;
-		position: relative;
-		cursor: pointer;
+		padding-top: 3em;
 
-		&:hover .button__outline {
-			border: 1px solid $color1;
-			background-color: $color1;
-			color: #fff;
+		@media screen and (min-width: 640px) {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
 		}
 	}
-	&__card-kids-img-container,
-	&__card-spa-img-container,
-	&__card-art-img-container,
-	&__card-tour-img-container,
-	&__card-whale-img-container,
-	&__card-wine-img-container,
-	&__card-golf-img-container,
-	&__card-surf-img-container {
+	//Cards
+	&__card {
+		background-color: $color5;
+		box-shadow: .5px .5px 2px 2px rgba($color2, .1);
+		margin-bottom: 2em;
+		border-radius: 5px;
+		text-align: center;
+
+		@media screen and (min-width: 640px) {
+			width: 48%;
+		}
+
+		@media screen and (min-width: 1024px) {
+			width: 47%;
+		}
+	}
+	&__card-img-container {
 		margin: 0;
 		padding: 0;
-		line-height: 0;
-		width: 310px;
-		position: absolute;
-		right: 0;
-		top: 0;
-		z-index: 400;
 	}
-	&__card-kids-copy-container,
-	&__card-spa-copy-container,
-	&__card-art-copy-container,
-	&__card-tour-copy-container,
-	&__card-whale-copy-container,
-	&__card-wine-copy-container,
-	&__card-golf-copy-container,
-	&__card-surf-copy-container  {
-		background-color: $color5;
-		width: 310px;
-		height: 450px;
-		padding: 13em 0 0 1em;
-		position: absolute;
-		left: 0;
-		top: 1.5em;
-		z-index: 350;
+	&__card-img {
+		border-radius: 5px 5px 0 0;
 	}
-	&__card-kids-title,
-	&__card-spa-title,
-	&__card-art-title,
-	&__card-tour-title,
-	&__card-whale-title,
-	&__card-wine-title,
-	&__card-golf-title,
-	&__card-surf-title {
-		color: $color2;
-		font-weight: $medium;
-		font-size: 1.2em;
+	&__card-copy-container {
+		padding: 1em;
+	}
+	&__card-title {
+		margin: 0 0 .5em;
 		text-transform: uppercase;
-		margin-bottom: 0;
-		margin-top: .8em;
-	}
-	&__card-kids-text,
-	&__card-spa-text,
-	&__card-art-text,
-	&__card-tour-text,
-	&__card-whale-text,
-	&__card-wine-text,
-	&__card-golf-text,
-	&__card-surf-text {
 		color: $color2;
-		font-weight: $light;
 		font-size: 1.1em;
-		line-height: 1.5;
+		font-weight: $medium;
 	}
-	&__card-kids-colorful,
-	&__card-spa-colorful,
-	&__card-art-colorful,
-	&__card-tour-colorful,
-	&__card-whale-colorful,
-	&__card-wine-colorful,
-	&__card-golf-colorful,
-	&__card-surf-colorful {
-		background-color: $color3;
-		width: 310px;
-		height: 400px;
-		position: absolute;
-		bottom: 0;
-		left: .6em;
+	&__card-text {
+		color: rgba($color2, .7);
+		line-height: 1.5;
 	}
 }

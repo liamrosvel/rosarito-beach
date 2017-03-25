@@ -5,19 +5,36 @@
 	&__container {
 		width: 90%;
 		margin: 0 auto;
+
+		@media screen and (min-width: 768px) {
+			width: 85%;
+		}
 	}
 	&__items-container {
-
+		
+		@media screen and (min-width: 1024px) {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
 	}
 	&__img-container {
 		margin: 0;
 		padding: 0;
+
+		@media screen and (min-width: 1024px) {
+			width: 49%;
+		}
 	}
 	&__img {
 
 	}
 	&__copy-container {
 		text-align: center;
+
+		@media screen and (min-width: 1024px) {
+			width: 48%;
+		}
 	}
 	&__header {
 		
@@ -34,5 +51,10 @@
 		font-size: 1.2em;
 		font-weight: $light;
 		line-height: 1.6;
+
+		@media screen and (min-width: 1024px) {
+			font-size: 1.1em;
+			line-height: 1.7;
+		}
 	}
 }

@@ -5,19 +5,37 @@
 	&__container {
 		width: 90%;
 		margin: 0 auto;
+
+		@media screen and (min-width: 768px) {
+			width: 85%;
+		}
 	}
 	&__elements-container {
 		position: relative;
+
+		@media screen and (min-width: 1024px) {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
 	}
 	&__img-container {
 		margin: 0;
 		padding: 0;
+
+		@media screen and (min-width: 1024px) {
+			width: 48%;
+		}
 	}
 	&__img {
 
 	}
 	&__copy-container {
 		text-align: center;
+
+		@media screen and (min-width: 1024px) {
+			width: 48%;
+		}
 	}
 	&__copy-header {
 
@@ -29,16 +47,29 @@
 		color: $color2;
 		font-size: 2.1em;
 		line-height: 1.4;
+
+		@media screen and (min-width: 1024px) {
+			margin-top: 0;
+		}
 	}
 	&__copy-header-subtitle {
 		font-family: $titleFont;
 		font-weight: $normalTitle;
 		font-size: 1.8em;
 		color: $color2;
+
+		@media screen and (min-width: 1024px) {
+			font-size: 1.6em;
+		}
 	}
 	&__copy-text {
 		font-size: 1.2em;
 		font-weight: $light;
 		line-height: 1.6;
+
+		@media screen and (min-width: 1024px) {
+			margin-bottom: 0;
+			font-size: 1.1em;
+		}
 	}
 }

@@ -2,14 +2,31 @@
 	margin-top: 5.3em;
 	padding: 3em 0;
 	background: url(../images/landing-small.jpg) 50% 50% / cover no-repeat;
-	
+
+	@media screen and (min-width: 480px) {
+		padding: 6em 0;
+	}
+
+	@media screen and (min-width: 640px) {
+		background: url(../images/landing-big.jpg) 50% 50% / cover no-repeat;
+	}
+
 	&__container {
 		width: 90%;
 		margin: 0 auto;
+
+		@media screen and (min-width: 768px) {
+			width: 85%;
+		}
 	}
 	&__copy-content {
 		padding: 2.5em 0;
 		text-align: center;
+
+		@media screen and (min-width: 640px) {
+			width: 80%;
+			margin: 0 auto;
+		}
 	}
 	&__title {
 		text-transform: uppercase;
@@ -25,8 +42,192 @@
 		font-size: 3.5em;
 	}
 	&__book-container {
+
 		@media screen and (max-width: 1023px) {
 			display: none;
+		}
+	}
+	&__button {
+
+		@media screen and (min-width: 640px) {
+			width: 50%;
+			margin: 0 auto;
+		}
+
+		@media screen and (min-width: 1024px) {
+			display: none;
+		}
+	}
+	//Book landing options
+	&__book-container {
+		background-color: #fff;
+		border-radius: 5px;
+		border: 1px solid rgba($color2, .15);
+		padding: 1em;
+		position: relative;
+	}
+	&__book-options {
+		display: flex;
+		justify-content: space-around;
+	}
+	&__book-opt {
+		border-right: 1px solid rgba($color2, .15); 
+	}
+	&__book-opt-btn {
+		border-right: none;
+	}
+	&__book-form {
+
+	}
+	&__book-input-container {
+
+	}
+	&__form-label {
+		margin-bottom: .5em;
+		font-size: .9em;
+		font-weight: $medium;
+		color: $color2;
+	}
+	&__form-input {
+		border: none;
+		line-height: 1.5;
+		color: rgba($color2, .6);
+		&:focus {
+			outline: none;
+		}
+		&::placeholder {
+			color: rgba($color2, .6);
+		}
+	}
+	&__book-button {
+		line-height: 3;
+		display: inline-block;
+		font-size: .9em;
+		padding: 0 1em;
+		&:hover {
+			transform: none;
+		}
+	}
+	//calendar styles
+	&__calendar-one,
+	&__calendar-two,
+	&__people-container {
+		background-color: $color5;
+		border: 1px solid rgba($color2, .2);
+		padding: 1em .5em;
+		position: absolute;
+		width: 230px;
+
+		animation: slideCalendar 600ms ease-in .2s 1 normal;
+		animation-play-state: pause;
+		display: none;
+		&.calendar-play-animation {
+			animation-play-state: play;
+			display: initial;
+		} 
+	}
+	&__calendar-one {
+		position: absolute;
+		top: 5.1em;
+		left: 0;
+		z-index: 300;
+	}
+	&__calendar-two {
+		position: absolute;
+		top: 5.1em;
+		left: 14.3em;
+		z-index: 300;		
+	}
+	&__calendar-month-container {
+		text-align: center;
+		border-bottom: 1px solid rgba($color2, .2);
+		margin-bottom: .5em;
+	}
+	&__calendar-month,
+	&__calendar-month-year {
+		color: $color2;
+		font-size: .9em;
+		font-weight: $bold;
+		margin: 0 0 .5em;
+	}
+	&__calendar-month-year {
+		font-weight: $normal;
+	}
+	&__calendar-week-container {
+		margin-bottom: .5em;
+	}
+	&__calendar-week-container,
+	&__calendar-days-container {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__calendar-day-week {
+		font-weight: $medium;
+		font-size: .9em;
+	}
+	&__calendar-day-week,
+	&__calendar-day {
+		color: rgba($color2, .5);
+		width: 1.5em;
+		height: 1.5em;
+	}
+	&__calendar-day {
+		margin-bottom: .2em;
+		font-size: .9em;
+		cursor: pointer;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&:hover {
+			background-color: $color1;
+			color: #fff;
+		}
+	}
+	&__calendar-day-style {
+		font-weight: $light;
+	}
+	//Animation calendar
+	@keyframes slideCalendar {
+		0% 
+		{
+			opacity: 0;
+			transform: translateY(0);
+		}
+		50%
+		{
+			opacity: .5;
+			transform: translateY(2em);
+		}
+		100%
+		{
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+	&__people-container {
+		position: absolute;
+		top: 5.1em;
+		left: 28.6em;
+		z-index: 300;	
+	}
+	&__people-form {
+
+	}
+	&__people-input-container {
+		margin-bottom: 1em;
+	}
+	&__people-input {
+		border: 1px solid rgba($color2, .2);
+		border-radius: 5px;
+		line-height: 2;
+		padding-left: 1em;
+		width: 50%;
+		color: rgba($color2, .6);
+		&:focus {
+			outline: none;
+		}
+		&::placeholder {
+			color: rgba($color2, .6);
 		}
 	}
 }

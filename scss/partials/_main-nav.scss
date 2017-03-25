@@ -30,7 +30,11 @@
 		}
 	}
 	&__item {
-
+		
+		@media screen and (min-width: 1024px) {
+			display: inline-block;
+			margin-left: 2em;
+		}
 	}
 	//svg icons style
 	&__icon {
@@ -38,6 +42,10 @@
 		margin-right: 1em;
 		position: relative;
 		top: .3em;
+
+		@media screen and (min-width: 1024px) {
+			display: none;
+		}
 	}
 	//link styles
 	&__link {
@@ -51,8 +59,38 @@
 		line-height: 4.5;
 		border-bottom: 1px solid rgba($color2, .2);	
 		transition: all 250ms ease-in;
-		&:hover {
-			background-color: rgba($color2, .1); 
+
+		@media screen and (min-width: 1024px) {
+			&:hover {
+				background-color: rgba($color2, .1); 
+			}
+		}
+
+		@media screen and (min-width: 1024px) {
+			border-bottom: none;
+			font-size: .9em;
+			font-weight: $normal;
+
+			&:hover {
+				background-color: transparent;
+				color: $color1;
+			}
+		}
+	}
+	//Link book nav styles
+	&__link-book {
+
+		@media screen and (min-width: 1024px) {
+			background-color: $color1;
+			line-height: 2.5;
+			padding: 0 1.3em;
+			border-radius: 3em;
+			color: #fff;
+			font-weight: $medium;
+			&:hover {
+				background-color: lighten($color1, 5%);
+				color: #fff;
+			}
 		}
 	}
 }

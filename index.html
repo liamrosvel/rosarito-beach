@@ -85,7 +85,7 @@
                                         </g>
                                     </g>
                                 </svg>events</a></li>
-                        <li class="main-nav__item"><a class="main-nav__link" href="#">
+                        <li class="main-nav__item"><a class="main-nav__link main-nav__link-book js-book-btn" href="#">
                                 <svg class="main-nav__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0" y="0" viewBox="0 0 33.2 28.9" xml:space="preserve" enable-background="new 0 0 33.2 28.9">
                                     <g id="XMLID_537_">
                                         <g id="XMLID_169_">
@@ -99,11 +99,11 @@
                 </nav>
             </div>
         </header>
-        <div class="book" id="book-modal">
+        <div class="book js-nav-modal" id="book-modal">
             <div class="book__container">
                 <div class="book__header">
                     <h2 class="book__header-title">Book your room</h2>
-                    <svg class="book__header-icon" id="close-modal" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24">
+                    <svg class="book__header-icon js-nav-modal-close" id="close-modal" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24">
                         <path d="M19 4q0.43 0 0.715 0.285t0.285 0.715q0 0.422-0.289 0.711l-6.297 6.289 6.297 6.289q0.289 0.289 0.289 0.711 0 0.43-0.285 0.715t-0.715 0.285q-0.422 0-0.711-0.289l-6.289-6.297-6.289 6.297q-0.289 0.289-0.711 0.289-0.43 0-0.715-0.285t-0.285-0.715q0-0.422 0.289-0.711l6.297-6.289-6.297-6.289q-0.289-0.289-0.289-0.711 0-0.43 0.285-0.715t0.715-0.285q0.422 0 0.711 0.289l6.289 6.297 6.289-6.297q0.289-0.289 0.711-0.289z"></path>
                     </svg>
                 </div>
@@ -126,7 +126,7 @@
                             <input class="book__form-input book__form-input-number" type="number" name="children" placeholder="0" id="children">
                         </div>
                     </form>
-                    <div class="book__button-container"><a class="button__colorful" href="#">book now</a></div>
+                    <div class="book__button-container"><a class="book__button button__colorful" href="#">book now</a></div>
                     <div class="book__calendar-one" id="calendar-one">
                         <div class="book__calendar-month-container">
                             <p class="book__calendar-month">April <span class="book__calendar-month-year">2017</span></p>
@@ -156,13 +156,13 @@
             <section class="landing">
                 <div class="landing__container">
                     <div class="landing__copy-content">
-                        <h1 class="landing__title">welcome to a scenic destination</h1><a class="button__colorful" id="open-modal" href="#">book now</a>
+                        <h1 class="landing__title">welcome to a scenic destination</h1><a class="landing__button button__colorful" id="open-modal" href="#">book now</a>
                     </div>
                     <div class="landing__book-container">
                         <div class="landing__book-options">
                             <div class="landing__book-opt">
                                 <form class="landing__book-form">
-                                    <div>
+                                    <div class="landing__book-input-container">
                                         <label class="landing__form-label" for="landing-check-in">Check-In</label>
                                         <input class="landing__form-input" type="text" name="landing-check-in" placeholder="DD / MM / YYYY" id="landing-check-in">
                                     </div>
@@ -170,7 +170,7 @@
                             </div>
                             <div class="landing__book-opt">
                                 <form class="landing__book-form">
-                                    <div>
+                                    <div class="landing__book-input-container">
                                         <label class="landing__form-label" for="landing-check-out">Check-Out</label>
                                         <input class="landing__form-input" type="text" name="landing-check-out" placeholder="DD / MM / YYYY" id="landing-check-out">
                                     </div>
@@ -178,45 +178,45 @@
                             </div>
                             <div class="landing__book-opt">
                                 <form class="landing__book-form">
-                                    <div>
+                                    <div class="landing__book-input-container">
                                         <label class="landing__form-label" for="people">People</label>
-                                        <input class="landing__form-input" type="text" name="people" placeholder="1 Guest" id="people">
+                                        <input class="landing__form-input" type="text" name="people" placeholder="1 Guest" id="landing-people">
                                     </div>
                                 </form>
                             </div>
-                            <div class="landing__book-opt"><a class="button__colorful" href="#">book now</a></div>
+                            <div class="landing__book-opt landing__book-opt-btn"><a class="landing__book-button button__colorful" href="#">book now</a></div>
                         </div>
-                        <div class="landing__calendar-one">
+                        <div class="landing__calendar-one" id="landing-calendar-one">
                             <div class="landing__calendar-month-container">
                                 <p class="landing__calendar-month">April <span class="landing__calendar-month-year">2017</span></p>
                             </div>
-                            <div class="landing__calendar-week-container"><span class="landing__calendar-day-week">Sun</span><span class="landing__calendar-day-week">Mon</span><span class="landing__calendar-day-week">Tue</span><span class="landing__calendar-day-week">Wed</span><span class="landing__calendar-day-week">Thu</span><span class="landing__calendar-day-week">Fri</span><span class="landing__calendar-day-week">Sat</span></div>
+                            <div class="landing__calendar-week-container"><span class="landing__calendar-day-week">Su</span><span class="landing__calendar-day-week">Mo</span><span class="landing__calendar-day-week">Tu</span><span class="landing__calendar-day-week">We</span><span class="landing__calendar-day-week">Th</span><span class="landing__calendar-day-week">Fr</span><span class="landing__calendar-day-week">Sa</span></div>
                             <div class="landing__calendar-days-container"><span class="landing__calendar-day landing__calendar-day-style">29</span><span class="landing__calendar-day landing__calendar-day-style">30</span><span class="landing__calendar-day landing__calendar-day-style">31</span><span class="landing__calendar-day">1</span><span class="landing__calendar-day">2</span><span class="landing__calendar-day">3</span><span class="landing__calendar-day">4</span></div>
                             <div class="landing__calendar-days-container"><span class="landing__calendar-day">5</span><span class="landing__calendar-day">6</span><span class="landing__calendar-day">7</span><span class="landing__calendar-day">8</span><span class="landing__calendar-day">9</span><span class="landing__calendar-day">10</span><span class="landing__calendar-day">11</span></div>
                             <div class="landing__calendar-days-container"><span class="landing__calendar-day">12</span><span class="landing__calendar-day">13</span><span class="landing__calendar-day">14</span><span class="landing__calendar-day">15</span><span class="landing__calendar-day">16</span><span class="landing__calendar-day">17</span><span class="landing__calendar-day">18</span></div>
                             <div class="landing__calendar-days-container"><span class="landing__calendar-day">19</span><span class="landing__calendar-day">20</span><span class="landing__calendar-day">21</span><span class="landing__calendar-day">22</span><span class="landing__calendar-day">23</span><span class="landing__calendar-day">24</span><span class="landing__calendar-day">25</span></div>
                             <div class="landing__calendar-days-container"><span class="landing__calendar-day">26</span><span class="landing__calendar-day">27</span><span class="landing__calendar-day">28</span><span class="landing__calendar-day landing__calendar-day-style">1</span><span class="landing__calendar-day landing__calendar-day-style">2</span><span class="landing__calendar-day landing__calendar-day-style">3</span><span class="landing__calendar-day landing__calendar-day-style">4</span></div>
                         </div>
-                        <div class="landing__calendar-two">
+                        <div class="landing__calendar-two" id="landing-calendar-two">
                             <div class="landing__calendar-month-container">
                                 <p class="landing__calendar-month">April <span class="landing__calendar-month-year">2017</span></p>
                             </div>
-                            <div class="landing__calendar-week-container"><span class="landing__calendar-day-week">Sun</span><span class="landing__calendar-day-week">Mon</span><span class="landing__calendar-day-week">Tue</span><span class="landing__calendar-day-week">Wed</span><span class="landing__calendar-day-week">Thu</span><span class="landing__calendar-day-week">Fri</span><span class="landing__calendar-day-week">Sat</span></div>
+                            <div class="landing__calendar-week-container"><span class="landing__calendar-day-week">Su</span><span class="landing__calendar-day-week">Mo</span><span class="landing__calendar-day-week">Tu</span><span class="landing__calendar-day-week">We</span><span class="landing__calendar-day-week">Th</span><span class="landing__calendar-day-week">Fr</span><span class="landing__calendar-day-week">Sa</span></div>
                             <div class="landing__calendar-days-container"><span class="landing__calendar-day landing__calendar-day-style">29</span><span class="landing__calendar-day landing__calendar-day-style">30</span><span class="landing__calendar-day landing__calendar-day-style">31</span><span class="landing__calendar-day">1</span><span class="landing__calendar-day">2</span><span class="landing__calendar-day">3</span><span class="landing__calendar-day">4</span></div>
                             <div class="landing__calendar-days-container"><span class="landing__calendar-day">5</span><span class="landing__calendar-day">6</span><span class="landing__calendar-day">7</span><span class="landing__calendar-day">8</span><span class="landing__calendar-day">9</span><span class="landing__calendar-day">10</span><span class="landing__calendar-day">11</span></div>
                             <div class="landing__calendar-days-container"><span class="landing__calendar-day">12</span><span class="landing__calendar-day">13</span><span class="landing__calendar-day">14</span><span class="landing__calendar-day">15</span><span class="landing__calendar-day">16</span><span class="landing__calendar-day">17</span><span class="landing__calendar-day">18</span></div>
                             <div class="landing__calendar-days-container"><span class="landing__calendar-day">19</span><span class="landing__calendar-day">20</span><span class="landing__calendar-day">21</span><span class="landing__calendar-day">22</span><span class="landing__calendar-day">23</span><span class="landing__calendar-day">24</span><span class="landing__calendar-day">25</span></div>
                             <div class="landing__calendar-days-container"><span class="landing__calendar-day">26</span><span class="landing__calendar-day">27</span><span class="landing__calendar-day">28</span><span class="landing__calendar-day landing__calendar-day-style">1</span><span class="landing__calendar-day landing__calendar-day-style">2</span><span class="landing__calendar-day landing__calendar-day-style">3</span><span class="landing__calendar-day landing__calendar-day-style">4</span></div>
                         </div>
-                        <div class="landing__people-container">
+                        <div class="landing__people-container" id="landing-people-opt">
                             <form class="landing__people-form">
-                                <div>
-                                    <label class="landing__people-label" for="adults">Adults</label>
-                                    <input class="landing__people-input" type="number" id="adults" name="adults" placeholder="0">
+                                <div class="landing__people-input-container">
+                                    <label class="landing__form-label" for="adults">Adults</label>
+                                    <input class="landing__people-input book__form-input-number" type="number" id="adults" name="adults" placeholder="0">
                                 </div>
-                                <div>
-                                    <label class="landing__people-label" for="children">Children</label>
-                                    <input class="landing__people-input" type="number" id="children" name="children" placeholder="0">
+                                <div class="landing__people-input-container">
+                                    <label class="landing__form-label" for="children">Children</label>
+                                    <input class="landing__people-input book__form-input-number" type="number" id="children" name="children" placeholder="0">
                                 </div>
                             </form>
                         </div>
@@ -261,7 +261,7 @@
                                 <h5 class="room__item-subtitle">relax and luxury</h5>
                                 <p class="room__item-text">With beautiful décor, breathtaking views and simple elegance, each suite offers panoramic views of the coastline and the blue Pacific, including the stark yet beautiful Coronado Islands just 8.5 miles away.</p>
                                 <h5 class="room__item-subtitle">room features</h5>
-                                <p class="room__item-text">Cable TV, Balcony, Shower & Bath. No A/C.</p><a class="button__outline" href="#">see more</a>
+                                <p class="room__item-text">Cable TV, Balcony, Shower & Bath. No A/C.</p><a class="room__button button__outline" href="#">see more</a>
                             </div>
                         </article>
                         <article class="room__item">
@@ -271,17 +271,17 @@
                                 <h5 class="room__item-subtitle">perfect for families</h5>
                                 <p class="room__item-text">It fronts the beach and is adjacent to the ¼ mile sports-fishing pier. It offers great vistas to watch people frolic in the surf and horseback riders by on the beach, so close, you'll be tempted to join them.</p>
                                 <h5 class="room__item-subtitle">room features</h5>
-                                <p class="room__item-text">Cable TV, Balcony, Phone, Small Refrigerator,Tables & Chairs, Shower & Bath. No A/C. </p><a class="button__outline" href="#">see more</a>
+                                <p class="room__item-text">Cable TV, Balcony, Phone, Small Refrigerator,Tables & Chairs, Shower & Bath. No A/C. </p><a class="room__button button__outline" href="#">see more</a>
                             </div>
                         </article>
-                        <article class="room__item">
+                        <article class="room__item room__item--margin">
                             <figure class="room__item-room-three"><img class="room__item-room" src="./images/room3.jpg" alt="coronado-tower-rooms"></figure>
                             <div class="room__item-copy-container">
                                 <h4 class="room__item-title">pacifico tower rooms</h4>
                                 <h5 class="room__item-subtitle">luxury and modern mexican decor</h5>
                                 <p class="room__item-text">With a range of suite options from a studio to a 3-bedroom, 3-bath penthouse suite. Suites have panoramic ocean views and exquisite furnishings, a Spanish colonial/mission style and dynamic.</p>
                                 <h5 class="room__item-subtitle">room features</h5>
-                                <p class="room__item-text">Living room, Kitchen, King size bed, Phone Cable TV, Balcony, Dining rooms & full bathrooms with A/C. </p><a class="button__outline" href="#">see more</a>
+                                <p class="room__item-text">Living room, Kitchen, King size bed, Phone Cable TV, Balcony, Dining rooms & full bathrooms with A/C. </p><a class="room__button button__outline" href="#">see more</a>
                             </div>
                         </article>
                     </div>
@@ -298,69 +298,61 @@
                         <p class="activities__copy">Ride ATVs or horses on the beach and golf at curses to the north or south.</p>
                     </div>
                     <div class="activities__cards-container">
-                        <article class="activities__card-kids">
-                            <figure class="activities__card-kids-img-container"><img class="activities__card-kids-img" src="./images/kids-club.jpg" alt="kids-club"></figure>
-                            <div class="activities__card-kids-copy-container">
-                                <h4 class="activities__card-kids-title">kids club</h4>
-                                <p class="activities__card-kids-text">We've created the Rosarito Beach Hotel Kids Club to provide free activities for our younger guests during summer and holidays.</p><a class="button__outline" href="#">see more</a>
+                        <article class="activities__card">
+                            <figure class="activities__card-img-container"><img class="activities__card-img" src="./images/kids-club.jpg" alt="kids-club"></figure>
+                            <div class="activities__card-copy-container">
+                                <h4 class="activities__card-title">kids club</h4>
+                                <p class="activities__card-text">We've created the Rosarito Beach Hotel Kids Club to provide free activities for our younger guests during summer and holidays.</p><a class="button__outline" href="#">see more</a>
                             </div>
-                            <div class="activities__card-kids-colorful"></div>
                         </article>
-                        <article class="activities__card-spa">
-                            <figure class="activities__card-spa-img-container"><img class="activities__card-spa-img" src="./images/spa.jpg" alt="spa"></figure>
-                            <div class="activities__card-spa-copy-container">
-                                <h4 class="activities__card-spa-title">spa</h4>
-                                <p class="activities__card-spa-text">Swedish massage, aromatherapy, hydrotherapy and hot stones; and at much lower prices than less luxurious spas to the north.</p><a class="button__outline" href="#">see more</a>
+                        <article class="activities__card">
+                            <figure class="activities__card-img-container"><img class="activities__card-img" src="./images/spa.jpg" alt="spa"></figure>
+                            <div class="activities__card-copy-container">
+                                <h4 class="activities__card-title">spa</h4>
+                                <p class="activities__card-text">Swedish massage, aromatherapy, hydrotherapy and hot stones; and at much lower prices than less luxurious spas to the north.</p><a class="button__outline" href="#">see more</a>
                             </div>
-                            <div class="activities__card-spa-colorful"></div>
                         </article>
-                        <article class="activities__card-art">
-                            <figure class="activities__card-art-img-container"><img class="activities__card-art-img" src="./images/art-gallery.jpg" alt="art-gallery"></figure>
-                            <div class="activities__card-art-copy-container">
-                                <h4 class="activities__card-art-title">art galleries</h4>
-                                <p class="activities__card-art-text">Great art is everywhere and going gallery hopping is becoming one the most popular things for people to do in Rosarito.</p><a class="button__outline" href="#">see more</a>
+                        <article class="activities__card">
+                            <figure class="activities__card-img-container"><img class="activities__card-img" src="./images/art-gallery.jpg" alt="art-gallery"></figure>
+                            <div class="activities__card-copy-container">
+                                <h4 class="activities__card-title">art galleries</h4>
+                                <p class="activities__card-text">Great art is everywhere and going gallery hopping is becoming one the most popular things for people to do in Rosarito.</p><a class="button__outline" href="#">see more</a>
                             </div>
-                            <div class="activities__card-art-colorful"></div>
                         </article>
-                        <article class="activities__card-tour">
-                            <figure class="activities__card-tour-img-container"><img class="activities__card-tour-img" src="./images/special-tours.jpg" alt="special-tours"></figure>
-                            <div class="activities__card-tour-copy-container">
-                                <h4 class="activities__card-tour-title">special tours</h4>
-                                <p class="activities__card-tour-text">We're offering  tours to help you see the wonders of Baja.  From the wine country, to fishing, to the great golf of Mexico.</p><a class="button__outline" href="#">see more</a>
+                        <article class="activities__card">
+                            <figure class="activities__card-img-container"><img class="activities__card-img" src="./images/special-tours.jpg" alt="special-tours"></figure>
+                            <div class="activities__card-copy-container">
+                                <h4 class="activities__card-title">special tours</h4>
+                                <p class="activities__card-text">We're offering  tours to help you see the wonders of Baja.  From the wine country, to fishing, to the great golf of Mexico. Come to Rosarito Hotel!</p><a class="button__outline" href="#">see more</a>
                             </div>
-                            <div class="activities__card-tour-colorful"></div>
                         </article>
-                        <article class="activities__card-whale">
-                            <figure class="activities__card-whale-img-container"><img class="activities__card-whale-img" src="./images/whale-watching.jpg" alt="whale-watching"></figure>
-                            <div class="activities__card-whale-copy-container">
-                                <h4 class="activities__card-whale-title">whale watching</h4>
-                                <p class="activities__card-whale-text">The great annual grey whale migration is one of the most extraordinary migrations on the planet.</p><a class="button__outline" href="#">see more</a>
+                        <article class="activities__card">
+                            <figure class="activities__card-img-container"><img class="activities__card-img" src="./images/whale-watching.jpg" alt="whale-watching"></figure>
+                            <div class="activities__card-copy-container">
+                                <h4 class="activities__card-title">whale watching</h4>
+                                <p class="activities__card-text">The great annual grey whale migration is one of the most extraordinary migrations on the planet.</p><a class="button__outline" href="#">see more</a>
                             </div>
-                            <div class="activities__card-whale-colorful"></div>
                         </article>
-                        <article class="activities__card-wine">
-                            <figure class="activities__card-wine-img-container"><img class="activities__card-wine-img" src="./images/wine-tasting.jpg" alt="wine-tasting"></figure>
-                            <div class="activities__card-wine-copy-container">
-                                <h4 class="activities__card-wine-title">wine tasting</h4>
-                                <p class="activities__card-wine-text">Baja California Wine Country is blessed with some of the most ideal Mediterranean climate for grape growing.</p><a class="button__outline" href="#">see more</a>
+                        <article class="activities__card">
+                            <figure class="activities__card-img-container"><img class="activities__card-img" src="./images/wine-tasting.jpg" alt="wine-tasting"></figure>
+                            <div class="activities__card-copy-container">
+                                <h4 class="activities__card-title">wine tasting</h4>
+                                <p class="activities__card-text">Baja California Wine Country is blessed with some of the most ideal Mediterranean climate for grape growing.</p><a class="button__outline" href="#">see more</a>
                             </div>
-                            <div class="activities__card-wine-colorful"></div>
                         </article>
-                        <article class="activities__card-golf">
-                            <figure class="activities__card-golf-img-container"><img class="activities__card-golf-img" src="./images/baja-golf.jpg" alt="baja-golf"></figure>
-                            <div class="activities__card-golf-copy-container">
-                                <h4 class="activities__card-golf-title">baja's golf</h4>
-                                <p class="activities__card-golf-text">You can play canyon-style golf throughout rolling hills all the while enjoying the natural beauty of the Pacific Ocean.</p><a class="button__outline" href="#">see more</a>
+                        <article class="activities__card">
+                            <figure class="activities__card-img-container"><img class="activities__card-img" src="./images/baja-golf.jpg" alt="baja-golf"></figure>
+                            <div class="activities__card-copy-container">
+                                <h4 class="activities__card-title">baja's golf</h4>
+                                <p class="activities__card-text">You can play canyon-style golf throughout rolling hills all the while enjoying the natural beauty of the Pacific Ocean.</p><a class="button__outline" href="#">see more</a>
                             </div>
-                            <div class="activities__card-golf-colorful"></div>
                         </article>
-                        <article class="activities__card-surf">
-                            <figure class="activities__card-surf-img-container"><img class="activities__card-surf-img" src="./images/surfing-lessons.jpg" alt="surfing-lessons"></figure>
-                            <div class="activities__card-surf-copy-container">
-                                <h4 class="activities__card-surf-title">surfing lessons</h4>
-                                <p class="activities__card-surf-text">Surf's Up! Look at a map of the Pacific Ocean and you will see that the peninsula of Baja California is a unique piece of geography.</p><a class="button__outline" href="#">see more</a>
+                        <article class="activities__card">
+                            <figure class="activities__card-img-container"><img class="activities__card-img" src="./images/surfing-lessons.jpg" alt="surfing-lessons"></figure>
+                            <div class="activities__card-copy-container">
+                                <h4 class="activities__card-title">surfing lessons</h4>
+                                <p class="activities__card-text">Surf's Up! Look at a map of the Pacific Ocean and you will see that the peninsula of Baja California is a unique piece.</p><a class="button__outline" href="#">see more</a>
                             </div>
-                            <div class="activities__card-surf-colorful"></div>
                         </article>
                     </div>
                 </div>
@@ -424,16 +416,18 @@
                             </div>
                         </div>
                         <div class="contact__item">
-                            <h3 class="contact__item-title">Reservations only from the USA</h3>
-                            <p class="contact__item-text">1 866 ROSARITO (767 2748)</p>
-                            <p class="contact__item-text">Monday to Friday from 8:30 am to 6:30 pm.</p>
-                            <p class="contact__item-text">Weekends and holidays 9:00 am to 5:00 pm(PST).</p>
-                        </div>
-                        <div class="contact__item">
-                            <h3 class="contact__item-title">Reservations only from the MEX</h3>
-                            <p class="contact__item-text">01 800 265 2322</p>
-                            <p class="contact__item-text">Monday to Friday from 8:30 am to 6:30 pm.						</p>
-                            <p class="contact__item-text">Weekends and holidays 9:00 am to 5:00 pm(PST).</p>
+                            <div class="contact__item">
+                                <h3 class="contact__item-title">Reservations only from the USA</h3>
+                                <p class="contact__item-text">1 866 ROSARITO (767 2748)</p>
+                                <p class="contact__item-text">Monday to Friday from 8:30 am to 6:30 pm.</p>
+                                <p class="contact__item-text">Weekends and holidays 9:00 am to 5:00 pm(PST).</p>
+                            </div>
+                            <div class="contact__item">
+                                <h3 class="contact__item-title">Reservations only from the MEX</h3>
+                                <p class="contact__item-text">01 800 265 2322</p>
+                                <p class="contact__item-text">Monday to Friday from 8:30 am to 6:30 pm.						</p>
+                                <p class="contact__item-text">Weekends and holidays 9:00 am to 5:00 pm(PST).</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -492,7 +486,7 @@
                         </svg>
                         <p class="footer__copyright">&#169;Rosarito Beach Hotel 2017</p>
                         <ul class="footer__social-list">
-                            <li class="footer__social-item"><a class="button__line" href="#">facebook</a></li>
+                            <li class="footer__social-item footer__social-item-fb"><a class="button__line" href="#">facebook</a></li>
                             <li class="footer__social-item"><a class="button__line" href="#">instagram</a></li>
                         </ul>
                     </div>

@@ -5,6 +5,10 @@
 	&__container {
 		width: 90%;
 		margin: 0 auto;
+
+		@media screen and (min-width: 768px) {
+			width: 85%;
+		}
 	}
 	//Items
 	&__items-container {
@@ -16,6 +20,11 @@
 	&__item {
 		margin-bottom: 2em;
 		width: 48%;
+
+		@media screen and (min-width: 768px) {
+			width: 33%;
+			text-align: center;
+		}
 	}
 	&__item-title {
 		display: inline-block;
@@ -34,6 +43,10 @@
 			bottom: -.2em;
 			left: 0;
 		}
+
+		@media screen and (min-width: 1024px) {
+			font-size: 1em;
+		}
 	}
 	&__list {
 		margin: 1.5em 0 0;
@@ -51,6 +64,10 @@
 		transition: all 250ms ease-in;
 		&:hover {
 			text-decoration: underline;
+		}
+
+		@media screen and (min-width: 1024px) {
+			font-size: .9em;
 		}
 	}
 	//Bottom elements
@@ -76,5 +93,15 @@
 	}
 	&__social-item {
 
+		@media screen and (min-width: 768px) {
+			display: inline-block;
+		}
+	}
+
+	&__social-item-fb {
+
+		@media screen and (min-width: 768px) {
+			margin-right: 2em;
+		}
 	}
 }

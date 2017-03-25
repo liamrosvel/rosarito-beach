@@ -3,13 +3,34 @@
 	background:
 		linear-gradient(rgba(0, 0, 0, .22),rgba(0, 0, 0, .22)),
 		url(../images/unique-experiencie.jpg) 50% 50% / cover no-repeat;
+	
+	@media screen and (min-width: 480px) {
+		padding: 7em 0;
+	}
 
+	@media screen and (min-width: 1024px) {
+		padding: 6em 0;
+	}
+	
 	&__container {
 		width: 90%;
 		margin: 0 auto;
+
+		@media screen and (min-width: 768px) {
+			width: 85%;
+		}
+
+		@media screen and (min-width: 1024px) {
+			width: 60%;
+		}
 	}
 	&__copy-container {
 		text-align: center;
+
+		@media screen and (min-width: 640px) {
+			width: 80%;
+			margin: 0 auto;
+		}
 	}
 	&__header {
 		padding-bottom: 1em;
@@ -26,10 +47,18 @@
 		font-family: $titleFont;
 		font-weight: $normalTitle;
 		margin-bottom: 0;
+
+		@media screen and (min-width: 1024px) {
+			font-size: 2.5em;
+		}
 	}
 	&__text {
 		font-size: 1.4em;
 		line-height: 1.5;
+
+		@media screen and (min-width: 1024px) {
+			font-size: 1.2em;
+		}
 	}
 	&__button {
 		font-size: 1.6em;
