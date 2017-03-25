@@ -9,6 +9,10 @@
 		@media screen and (min-width: 768px) {
 			width: 85%;
 		}
+
+		@media screen and (min-width: 1200px) {
+			width: 1110px;
+		}
 	}
 	&__header {
 
@@ -26,11 +30,33 @@
 	&__items-container {
 		padding-top: 2em;
 	}
-	&__item {
-		margin-bottom: 5em;
+	&__item-one {
+		@media screen and (min-width: 1024px) {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 1em;
+		}
 	}
 	&__element-container {
 		margin-bottom: 3em;
+
+		@media screen and (min-width: 1024px) {
+			width: 30%;
+		}
+	}
+	&__item-two {
+
+		@media screen and (min-width: 1024px) {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+	&__item {
+		margin-bottom: 5em;
+
+		@media screen and (min-width: 1024px) {
+			width: 45%;
+		}
 	}
 	&__item-title {
 		color: $color2;
@@ -49,11 +75,19 @@
 			bottom: -.2em;
 			left: 0;
 		}
+
+		@media screen and (min-width: 1024px) {
+			font-size: 1.3em;
+		}
 	}
 	&__item-text {
 		color: rgba($color2, .7);
 		font-size: 1.2em;
 		font-weight: $light;
 		line-height: 1.6;
+
+		@media screen and (min-width: 1024px) {
+			font-size: 1.05em;
+		}
 	}
 }

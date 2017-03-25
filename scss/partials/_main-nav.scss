@@ -60,7 +60,7 @@
 		border-bottom: 1px solid rgba($color2, .2);	
 		transition: all 250ms ease-in;
 
-		@media screen and (min-width: 1024px) {
+		@media screen and (max-width: 1023px) {
 			&:hover {
 				background-color: rgba($color2, .1); 
 			}

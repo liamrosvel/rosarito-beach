@@ -9,9 +9,18 @@
 		@media screen and (min-width: 768px) {
 			width: 85%;
 		}
+
+		@media screen and (min-width: 1200px) {
+			width: 1110px;
+		}
 	}
 	&__header {
 		text-align: center;
+
+		@media screen and (min-width: 1200px) {
+			width: 50%;
+			margin: 0 auto;
+		}
 	}
 	&__header-title {
 		font-family: $titleFont;
@@ -36,6 +45,11 @@
 	}
 	&__copy-container {
 		text-align: center;
+
+		@media screen and (min-width: 1200px) {
+			width: 80%;
+			margin: 0 auto;
+		}
 	}
 	&__copy {
 		font-size: 1.2em;
@@ -60,7 +74,7 @@
 	//Cards
 	&__card {
 		background-color: $color5;
-		box-shadow: .5px .5px 2px 2px rgba($color2, .1);
+		box-shadow: .5px .5px 2px 1px rgba($color2, .1);
 		margin-bottom: 2em;
 		border-radius: 5px;
 		text-align: center;
@@ -71,6 +85,10 @@
 
 		@media screen and (min-width: 1024px) {
 			width: 47%;
+		}
+
+		@media screen and (min-width: 1200px) {
+			width: 22.5%;
 		}
 	}
 	&__card-img-container {
@@ -93,5 +111,17 @@
 	&__card-text {
 		color: rgba($color2, .7);
 		line-height: 1.5;
+
+		@media screen and (min-width: 1200px) {
+			font-size: .9em;
+			line-height: 1.7;
+		}
+	}
+	&__button {
+
+		@media screen and (min-width: 1200px) {
+			font-size: 1em;
+			line-height: 2;
+		}
 	}
 }

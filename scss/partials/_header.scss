@@ -20,6 +20,10 @@
 			display: flex;
 			justify-content: space-between;
 		}
+
+		@media screen and (min-width: 1200px) {
+			width: 1110px;
+		}
 	}
 	&__icons-container {
 		display: flex;

@@ -9,6 +9,10 @@
 		@media screen and (min-width: 768px) {
 			width: 85%;
 		}
+
+		@media screen and (min-width: 1200px) {
+			width: 1110px;
+		}
 	}
 	//Items
 	&__items-container {
@@ -16,6 +20,10 @@
 		justify-content: space-between;
 		flex-wrap: wrap;
 		margin-bottom: 3em;
+
+		@media screen and (min-width: 1200px) {
+			margin-bottom: 6em;
+		}
 	}
 	&__item {
 		margin-bottom: 2em;
@@ -90,6 +98,10 @@
 		margin: 0;
 		padding: 0;
 		list-style: none;
+
+		@media screen and (min-width: 1200px) {
+			margin-top: 2em;
+		}
 	}
 	&__social-item {
 
@@ -97,11 +109,16 @@
 			display: inline-block;
 		}
 	}
-
 	&__social-item-fb {
 
 		@media screen and (min-width: 768px) {
 			margin-right: 2em;
+		}
+	}
+	&__social-link {
+
+		@media screen and (min-width: 1024px) {
+			font-size: 1em;
 		}
 	}
 }

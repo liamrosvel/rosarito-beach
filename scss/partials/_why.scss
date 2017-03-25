@@ -1,5 +1,4 @@
 .why {
-	background-color: $color3;
 	padding: 5em 0 4em;
 
 	&__container {
@@ -8,6 +7,10 @@
 
 		@media screen and (min-width: 768px) {
 			width: 85%;
+		}
+
+		@media screen and (min-width: 1200px) {
+			width: 1110px;
 		}
 	}
 	&__elements-container {
